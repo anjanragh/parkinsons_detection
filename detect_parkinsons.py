@@ -67,7 +67,7 @@ def test_metrics(model, testX, testy):
 
 
 if __name__ == "__main__":
-    trainX, trainy, testX, testy = create_dataset(dataset_path_spiral)
+    trainX, trainy, testX, testy = create_dataset(dataset_path_wave)
     print(len(trainX), len(trainy), len(testX), len(testy))
     model = train(trainX, trainy)
     metrics = test_metrics(model, testX, testy)
